@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medical_emergency"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shaheer.hifazat.MedicalEmergencyActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/fragment" />
+
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etlatitude"
+        android:hint="Latitude"
+        android:layout_alignBottom="@+id/etlongitude"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/etlongitude" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/etlongitude"
+        android:layout_alignParentStart="true"
+        android:id="@+id/etlandmark"
+        android:hint="Nearest Landmark" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etstatus"
+        android:hint="Status"
+        android:layout_below="@+id/etlandmark"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Notify for Medical Emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textColor="@color/cast_expanded_controller_text_color" />
+
+    <EditText
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etlongitude"
+        android:hint="Longitude"
+        android:layout_below="@+id/fragment"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etdescription"
+        android:hint="Description"
+        android:layout_below="@+id/etstatus"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/imageButton3" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_crime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shaheer.hifazat.CrimeActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/fragment"
+            android:layout_below="@+id/btnfeedback"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etlatitude"
+            android:hint="Latitude"
+            android:layout_alignBottom="@+id/etlongitude"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/etlongitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/fragment"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="11dp"
+            android:id="@+id/etlongitude"
+            android:hint="Longitude" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/etlongitude"
+            android:layout_alignParentStart="true"
+            android:id="@+id/etlandmark"
+            android:hint="Nearest Landmark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etdescription"
+            android:hint="Description"
+            android:layout_below="@+id/etcrime"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etcrime"
+            android:hint="Type of Crime"
+            android:layout_below="@+id/etlandmark"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/imageicon"
+            android:id="@+id/imageView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_marginBottom="90dp"
+            android:id="@+id/editText"
+            android:hint="Name"
+            android:layout_above="@+id/imageView3"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Submit Crime Report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsubmit"
+            android:textAlignment="center"
+            android:textColor="@color/cast_expanded_controller_text_color"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <string-array name="cnn_array">
+        <item>Select...</item>
+        <item>CNN Top Stories</item>
+        <item>CNN World</item>
+        <item>CNN Money</item>
+        <item>CNN Technology</item>
+        <item>CNN Science And Space</item>
+        <item>CNN Entertainment</item>
+        <item>CNN World Sport</item>
+        <item>CNN Travel</item>
+        <item>CNN Most Recent</item>
+    </string-array>
+
+    <string-array name="bbc_array">
+        <item>Select...</item>
+        <item>BBC Top Stories</item>
+        <item>BBC World</item>
+        <item>BBC Money</item>
+        <item>BBC Technology</item>
+        <item>BBC Science And Space</item>
+        <item>BBC Entertainment</item>
+        <item>BBC World Sport</item>
+        <item>BBC Travel</item>
+        <item>CNN Most Recent</item>
+    </string-array>
+
+    <string-array name="geo_array">
+        <item>Select...</item>
+        <item>Geo Headlines</item>
+        <item>Geo Pakistan</item>
+        <item>Geo World</item>
+        <item>Geo Business</item>
+        <item>Geo Sports</item>
+        <item>Geo Entertainment</item>
+        <item>Geo Health</item>
+        <item>Geo Amazing And Interesting</item>
+    </string-array>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
